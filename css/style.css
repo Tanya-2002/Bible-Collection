@@ -1,0 +1,1004 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar{
+padding: 15px;
+}
+
+.navbar__container{
+  display:flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar__items nav{
+  margin-top: 10px;
+}
+
+.navbar__items a{
+  color:#f3b435;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right:20px;
+}
+
+.navbar__items a:hover{
+  color:#464749;
+  text-decoration: none;
+}
+
+.navbar__experience-text{
+  color:#959595;
+  text-align:right;
+  font-weight: 600;
+  margin-right: 18px;
+}
+
+/* Navbar Responsive */
+/* @media (max-width:991px) and (min-width:730px){
+
+} */
+
+@media (min-width:730px) and (max-width: 992px) {
+  .navbar__container {
+    width: 100%;
+  }
+
+  .navbar__experience-text {
+    text-align: right;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 730px) {
+  .navbar__container {
+     width: 95%;
+     flex-direction: column; 
+     align-items: flex-start; 
+  }
+  .navbar__items{
+    margin-top: 10px;
+  }
+}
+
+ @media (max-width: 428px) {
+  .navbar__logo {
+    height: 50px;
+  }
+
+  .navbar__items a {
+    font-size: 14px;
+    margin-right: 13px;
+  }
+
+  .navbar__experience-text {
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: right;
+  }
+} 
+
+/* ------Header ------- */
+
+.header-image {
+  position: relative;
+}
+
+.header-image__img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover; 
+}
+
+.header-image__heading{
+  text-shadow: 2px 2px 5px #0e0505ad;
+}
+
+.header-image__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-image__heading {
+  margin: 0;
+  font-size: 6.5rem;
+  font-weight: 300;
+  z-index: 1; 
+}
+
+/* Header Responsive */
+
+@media screen and (max-width: 848px) {
+  .header-image__heading {
+    font-size: 4rem; 
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(48, 47, 47);
+  }
+
+  .header-image__img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover; 
+  }
+  .header-image__overlay {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 480px) and (max-width:848px){
+  .header-image__img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover; 
+  }
+  .header-image__overlay {
+    height: 80vh;
+  }
+  .header-image__heading {
+    text-shadow: 2px 2px 5px #0e0505ad;
+}
+}
+
+@media (max-width: 480px) {
+  .header-image__heading {
+    font-size: 3rem; 
+  }
+  .header-image__img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; 
+  }
+  .header-image__overlay {
+    height: 60vh;
+  }
+}
+
+/* Go Further with Filament Content */
+.filament-content{
+  background-color: #ffffff;
+  width: 80%;
+  margin: 80px auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.filament-content__title{
+font-size: 50px;
+font-family: math;
+}
+
+.filament-content__text--light{
+color: #797575;
+font-weight: 450;
+text-align: justify;
+}
+
+.filament-content__link{
+color: #dbaa23;
+}
+
+.filament-content__link:hover{
+color: #d6b866;
+}
+
+.filament-content__text--dark{
+font-weight: 500;
+text-align: justify;
+}
+
+.btn-yellow{
+  padding: 15px 20px;
+  background-color:#dbaa23;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-yellow:hover{
+  background-color:#f1ce6d;
+  cursor: pointer;
+}
+
+/* Go Further with Filament Content Responsive*/
+@media (max-width: 412px) {
+  .btn-yellow{
+    font-size: 12px;
+    padding: 16px 5px;
+    font-weight: 700;
+  }
+
+.filament-content__title {
+  font-size: 38px;
+}
+}
+
+@media (max-width: 360px) {
+.filament-content {
+  margin: 50px auto;
+}
+} 
+
+/* Images using grid */
+
+.bible-grid{
+height: 100vh;
+width: 100%;
+display: grid;
+grid-template-rows:repeat(4,1fr);
+grid-template-columns:repeat(2,1fr);
+}
+
+.bible-grid__item--1{
+background-image: url('/images/bible\ store.jpg'); 
+background-size:cover;
+background-position: center;
+}
+
+.bible-grid__item--2{
+grid-row-start: 1;
+grid-row-end: 3;
+grid-column-start:2 ;
+grid-column-end:3 ;
+background-image: url('/images/Filament_ThreeBindings.jpg'); 
+background-size:cover;
+background-position: center;
+} 
+
+.bible-grid__item--3{
+background-image: url('/images/bible\ sign\ print.jpg'); 
+background-size:cover;
+background-position: center;
+}
+
+.bible-grid__item--4{
+grid-column-start:1 ;
+grid-column-end:3 ;
+grid-row-start: 3;
+grid-row-end: 5;
+background-image: url('/images/background-bible-sun.jpg'); 
+background-size:cover;
+background-position: center;
+}
+
+/* Filament Bible Collection Content */
+
+.filament-collection__title {
+margin-top: 50px;
+word-spacing: 7px;
+font-size: 42px;
+text-align: center;
+}
+
+.filament-collection__description {
+color: #797575;
+padding: 5px 220px;
+}
+
+/* Filament Bible Collection Content Responsive Styles */
+@media (max-width: 1200px) { 
+.filament-collection__title {
+  font-size: 36px;  
+  margin-top: 40px; 
+}
+
+.filament-collection__description {
+  padding: 5px 150px;
+}
+}
+
+@media (max-width: 768px) { 
+.filament-collection__title {
+  font-size: 32px;  
+  margin-top: 30px;  
+}
+
+.filament-collection__description {
+  padding: 5px 60px; 
+}
+}
+
+@media (max-width: 480px) { 
+.filament-collection__title {
+  font-size: 28px;  
+  margin-top: 20px;  
+}
+
+.filament-collection__description {
+  padding: 5px 20px;  
+}
+}
+
+/* Bible Collection Responsive */
+.bible-collection{
+text-align: center;
+}
+
+.bible-collection__list{
+display: flex;
+justify-content: space-around;
+/* margin-top: 40px; */
+flex-wrap: wrap;
+/* padding: 25px; */
+}
+
+.bible-collection__list > .bible-collection__item{
+width: 320px;
+margin: 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.bible-collection__description{
+  text-align: justify;
+  font-family: 'Times New Roman';
+  font-weight:400;
+  font-size:18px;
+}
+
+.bible-collection__list img{
+width: 150px;
+height: 100%;
+margin-top: 40px;
+}
+
+.bible-collection__image{
+height: 250px;
+width: 250px;
+border: 1px solid black;
+border-radius: 50%;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+/* Collage Image */
+.collage-image__img {
+  height: 50%;
+  width: 100%;
+}
+
+/* Filament app features */
+
+.mobile-images__item{
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+
+.mobile-images__image{
+  width: 70%;
+} 
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color:#c79e2e;
+  position: absolute;
+  top: 60%;
+  opacity: 0.9;
+  height: max-content;
+  padding: 0 32px;
+  margin-bottom: 100px;
+}
+
+.cards__item {
+  width: 33%;
+  padding: 15px;
+  background-color: #c79e2e;;
+  border: none;
+  text-align: justify;
+}
+
+.cards__description{
+  text-align: justify;
+  font-size: 18px;
+}
+ 
+.cards__title{
+  /* text-align: center; */
+  font-size: 25px;
+  font-weight: bold;
+}
+ 
+.buttons-filament {
+  /* position: absolute; */
+  /* top: 82%;
+  left: 40%; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #ffda77;
+}
+ 
+.buttons-filament button {
+  font-weight: 500;
+  margin: 5px;
+  border: none;
+  color:#c79e2e;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+}
+ 
+button:hover {
+  background-color: #e67e22;
+}
+.btn {
+  margin-left: 0;
+}
+
+/* Filament App Feature Responsive */
+
+
+@media (min-width:857px) {
+  .filament-app-feature{
+    display: none;
+  }
+  .filament-app-feature1{
+    position: relative;
+    margin-bottom: 100px;
+    }
+    
+    .filament-app-feature__header{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .mobile-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      gap: 20px;
+    }
+}
+
+@media (max-width:856px){
+  .filament-app-feature{
+    position: relative; 
+    /* margin-bottom: 100px; */
+    }
+
+    .filament-app-feature1{
+      display: none;
+    }
+    
+    .filament-app-feature__header{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+.filament-app-feature__image-container {
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+.filament-app-feature__item{
+  width: 300px;
+  background-color: white;
+  padding: 15px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.filament-app-feature__item-text{
+  background-color: #c79e2e;
+    opacity: 0.9;
+    align-items: justify;
+    text-align: justify;
+    padding: 40px;
+    margin-top: -286px;
+    height:70%;
+    border-radius: 10px ;
+}
+
+.filament-app-feature__title {
+  color: #333;
+}
+
+.filament-app-feature__description {
+  color: #666;
+}
+
+.filament-app-feature__buttons {
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  color: #ffda77;
+  align-items: center;
+}
+
+.filament-app-feature__buttons button {
+  font-weight: 500;
+  margin: 5px;
+  border: none;
+  color:#c79e2e;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid #c79e2e;
+  width:85%;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+.btn {
+  margin-left: 0;
+}
+}
+
+
+@media (min-width:666px) and (max-width:856px){
+  .filament-app-feature__image-container{
+    flex-wrap:nowrap;
+  }
+  .filament-app-feature__item-text{
+    border-radius: 0px;
+    padding: 25px;
+  }
+  .filament-app-feature__buttons{
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+}
+/* Beyond-the-collection  */
+
+.beyond-the-collection__title{
+  font-weight: bold;
+}
+
+.beyond-the-collection__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: -240px; */
+  font-size: 21px;
+  padding: 10px;
+}
+
+.beyond-the-collection__description{
+    padding: 10px 175px;
+    color: #666;
+    text-align: center;
+    font-size: 20px;
+}
+
+.beyond-the-collection__cards {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+gap: 20px; 
+}
+
+.beyond-the-collection__card--1, .beyond-the-collection__card--2 {
+flex: 1;
+padding: 15px;
+text-align: start; 
+}
+
+.beyond-the-collection__cards img {
+width: 40%; 
+height: 55%; 
+margin-bottom: 20px;
+}
+
+.beyond-the-collection__card--1 p, .beyond-the-collection__card--2 p {
+font-size: 1rem;
+line-height: 1.5;
+color: #333;
+margin-bottom: 15px; 
+}
+
+.beyond-the-collection__card--1 button, .beyond-the-collection__card--2 button {
+padding: 10px 15px;
+background-color: #dbaa23;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.beyond-the-collection__card--1 button:hover, .beyond-the-collection__card--2 button:hover {
+background-color: #f1ce6d;
+}
+
+.beyond-the-collection__btn-learn-more{
+  padding: 15px 20px;
+  background-color:#dbaa23;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  }
+  
+  .beyond-the-collection__btn-learn-more:hover{
+  background-color:#f1ce6d;
+  cursor: pointer;
+  }
+
+/* Beyond-the-collection Responsive */
+
+@media (min-width: 857px) and (max-width:1232px){
+  .beyond-the-collection{
+    margin-top: 290px;
+  }
+}
+
+
+@media (max-width: 768px) {
+.beyond-the-collection__cards {
+  flex-direction: column; 
+  padding-top: 0;
+}
+
+.beyond-the-collection__card--1, .beyond-the-collection__card--2 {
+  width: 90%; 
+  max-width: 500px; 
+}
+
+/* .beyond-the-collection__cards img {
+  max-width: 150px; 
+} */
+
+.beyond-the-collection__description{
+  padding: 0 10px;
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 852px){
+  .beyond-the-collection{
+    margin-top: 10px;
+  }
+  .beyond-the-collection__title {
+    font-weight: 500;
+    text-align: center;
+}
+}
+
+@media (max-width: 360px) {
+  .beyond-the-collection__btn-learn-more{
+    font-size: 12px;
+    padding: 17px 15px;
+    font-weight: 700;
+  }
+}
+
+
+
+/* Bible Form */
+
+.find-bible {
+  background-color: #e5e5e5;
+  padding: 80px;
+  text-align: center;
+  }
+  
+  .find-bible__header {
+  margin-bottom: 20px;
+  }
+  
+  .find-bible__title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: auto;
+  }
+  
+  .find-bible__description {
+  font-size: 25px;
+  }
+  
+  .find-bible__link {
+  color:  #dbaa23;
+  text-decoration: none;
+  }
+  .find-bible__link:hover{
+    color:#eecf7b;
+  }
+  
+  .find-bible__form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 100px;
+  text-align: left;
+  padding: 35px 70px;       
+  }
+  
+  .find-bible__question {
+  margin-bottom: 20px;
+  }
+  
+  .find-bible__question-title {
+  font-size: 18px;
+  font-weight: bold;
+  }
+  
+  .find-bible__question-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  }
+  
+  .find-bible__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+  
+  .find-bible__option {
+  font-size: 20px;
+  cursor: pointer;
+  }
+  
+  .btn-outline-warning {
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .btn-color{
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+    width:180px;
+    border:2px solid #ffc107;
+  }
+  
+  .help-icon {
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Bible Form Responsive*/
+
+@media (max-width: 767px) {
+  .find-bible {
+    padding: 40px 20px;
+    /* margin: 10px auto; */
+  }
+
+  .find-bible__title {
+    font-size: 30px;
+  }
+
+  .find-bible__description {
+    font-size: 18px;
+  }
+
+  .find-bible__form {
+    padding: 20px 18px;
+    margin: 20px;
+  }
+
+  .find-bible__question-title {
+    font-size: 16px;
+  }
+
+  .find-bible__question-text {
+    font-size: 18px;
+  }
+
+  .find-bible__options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .find-bible__option {
+    font-size: 18px;
+  }
+
+  .btn-outline-warning {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .help-icon{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .find-bible__question-text{
+    font-size: 18px;
+  }
+  .find-bible__option {
+    font-size: 15px;
+  } 
+}
+
+/* Footer */
+
+.footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  padding: 20px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-section {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-bottom p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="email"] {
+  padding: 5px;
+  width: 100%;
+}
+
+.footer-section button {
+  padding: 5px 78px;
+  background-color: #4d4d4d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-section label {
+  font-size: 10px;
+}
+
+.footer-section a {
+  font-weight: 600;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #636060;
+}
+
+.privacy-agreement {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-bottom > p:first-child{
+  font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-item {
+  display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 15px;
+  align-items: start;
+    font-size: 18px;
+}
+
+button[type="submit"]{
+  width: 100px;
+  padding: 5px 15px;
+}
+
+.footer-item {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.footer-combine p{
+  display: flex;
+    gap: 20px;
+    align-items: start;
+}
+
+.footer-combine {
+  display: flex;
+  gap: 20px;
+  align-items: center;  
+}
+
+/* footer responsive */
+
+@media screen and (max-width: 1340px) {
+  .footer-section button {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .footer-section button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .footer-combine {
+    gap:0
+  }
+}
+
+@media screen and (max-width: 466px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 40px;
+  }
+  .footer-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-combine {
+    gap:0
+  }
+}
